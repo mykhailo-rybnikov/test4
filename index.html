@@ -3,111 +3,52 @@
 <head>
 	<title>Кнопки оплати</title>
 	<style>
-		/* Стилі для елемента <body> */
 body {
+  background: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/d4c206106908271.5f9a9c3771ad7.jpg") no-repeat center center fixed;
+  background-blend-mode: hue;
+  background-color: #db287f;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   color: #ffffff;
+zoom: 2;
 }
 
-/* Додано: responsive стиль для фону */
-body:before {
-  content: "";
-  background: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/d4c206106908271.5f9a9c3771ad7.jpg") no-repeat center center fixed;
-  background-blend-mode: hue;
-  background-color: #db287f;
-  opacity: 0.2;
-  z-index: -1;
-  /* Стилі для responsive фону */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* Додано: responsive і flex стилі для форми */
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-input {
-  border: 1px solid #ff0088;
-  border-radius: 5px;
-  color: #cd0749;
-  font-size: 20px;
-  padding: 10px;
-  margin-bottom: 10px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-label {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-
-/* Додано: responsive стиль для заголовка */
-p.animated {
-  font-size: 48px;
-  text-align: center;
-}
-
-@media only screen and (max-width: 768px) {
-  /* Додано: responsive і flex стилі для елемента <body> */
+/* Стилі для мобільних телефонів */
+@media screen and (max-width: 480px) {
   body {
-    background: #db287f;
+    display: flex;
+    flex-direction: column;
   }
-  
-  /* Додано: responsive і flex стилі для форми */
-  form {
-    padding: 20px;
-  }
-  
-  /* Додано: responsive стиль для заголовка */
-  p.animated {
-    font-size: 36px;
-  }
-  
-  /* Додано: responsive стиль для елементів label */
   label {
     flex-basis: 100%;
-    margin: 5px 0;
-    font-size: 16px;
   }
 }
+		
+		h1 {
+			flex-basis: 100%;
+			text-align: center;
+		}
+
+		p {
+			flex-basis: 100%;
+			text-align: center;
+			font-size: 24px;
+			margin-bottom: 40px;
+		}
+
+		label {
+			flex-basis: calc(33.33% - 20px);
+			margin: 10px;
+			text-align: center;
+			font-size: 20px;
+		}
 
 		#payment-method {
 			font-size: 20px;
 			font-weight: bold;
 			color: rgb(255, 255, 255);
 		}
-/* Стилі для елемента <body> */
-	body {  background: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/d4c206106908271.5f9a9c3771ad7.jpg") no-repeat center center fixed;
-	background-blend-mode: hue;
-  background-color: #db287f;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
-}
-
-/* Стилі для <input> */
-input {
-  border: 1px solid #ff0088;
-  border-radius: 5px;
-  color: #cd0749;
-  font-size: 20px;
-  padding: 10px;
-}
 
 /* Стилі для фону */
 body:before {
